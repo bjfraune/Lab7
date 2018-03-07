@@ -20,7 +20,7 @@ public class MainDirectory {
 
 	public void print() {
 		for (Employee person : directory) {
-			System.out.println(person);
+			System.out.println(person.toString());
 		}
 	}
 
@@ -28,7 +28,7 @@ public class MainDirectory {
 		directory.clear();
 	}
 
-	public void trasfer(String json) {
+	public void transfer(String json) {
 		ArrayList<Employee> entries = (g.fromJson(json,
 				new TypeToken<ArrayList<Employee>>() {
 				}.getType()));

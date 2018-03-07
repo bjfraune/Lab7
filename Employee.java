@@ -38,7 +38,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return _lname + ", " + _fname + " " + _phone + " " + _department + "\n";
+		return _lname + ", " + _fname + " " + _phone + " " + _department;
 	}
 
 }
