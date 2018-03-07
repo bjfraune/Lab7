@@ -1,14 +1,13 @@
 public class Employee {
 	private String _fname;
 	private String _lname;
-	private int _phone;
+	private String _phone;
 	private String _department;
 
-	public Employee(String firstName, String lastName, int phoneNum,
-			String department) {
+	public Employee(String firstName, String lastName, String department, String phoneNumber) {
 		_fname = firstName;
 		_lname = lastName;
-		_phone = phoneNum;
+		_phone = phoneNumber;
 		_department = department;
 	}
 
@@ -28,7 +27,7 @@ public class Employee {
 		return _lname;
 	}
 
-	public void setPhoneNumber(int number) {
+	public void setPhoneNumber(String number) {
 		_phone = number;
 	}
 

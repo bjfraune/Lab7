@@ -16,7 +16,7 @@ public class DirectoryProxy {
 		System.out.println(emp.toString());
 	}
 	public void clear(){
-		emp = new ArrayList<Employee>();
+		emp.clear();
 	}
 	public String printJsonFormatArrList(){
 		return proxy.toJson(emp);
