@@ -1,19 +1,24 @@
-package lab7;
+
 
 import java.util.ArrayList;
 
 import com.google.gson.Gson;
 //import com.google.gson.reflect.TypeToken;
 
-public class DirectoryProxy {
-	Gson dp = new Gson();
-	public String add(ArrayList<Employee> array){
-		return dp.toJson(array);
+public class DirectoryProxy {	
+	ArrayList <Employee> emp = new ArrayList<Employee>();
+	Gson proxy = new Gson();
+	public Boolean add(Employee E){
+		return emp.add(E);
+		
 	}
-	public void print(String printThis){
-		System.out.println(printThis);
+	public void print(){
+		System.out.println(emp.toString());
 	}
 	public void clear(){
-		dp = new Gson();
+		emp = new ArrayList<Employee>();
+	}
+	public String printJsonFormatArrList(){
+		return proxy.toJson(emp);
 	}
 }
